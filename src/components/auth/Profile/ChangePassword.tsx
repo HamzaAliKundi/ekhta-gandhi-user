@@ -10,35 +10,35 @@ const ChangePassword = () => {
         {/* Left Column */}
         <div className="space-y-4">
           <div>
-            <label className="block font-inter font-normal text-sm leading-none text-gray-700 mb-2">
+            <label className="block font-inter font-normal text-xs leading-none text-black mb-2">
               User ID
             </label>
             <input
               type="text"
               defaultValue="admin001"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm"
+              className="w-full h-12 px-4 py-3 border border-[#A8A8A8] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm bg-white shadow-[0px_1px_2px_0px_#0A0D120D]"
             />
           </div>
 
           <div>
-            <label className="block font-inter font-normal text-sm leading-none text-gray-700 mb-2">
+            <label className="block font-inter font-normal text-xs leading-none text-black mb-2">
               New Password
             </label>
             <input
               type="password"
               defaultValue="••••••••"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm"
+              className="w-full h-12 px-4 py-3 border border-[#A8A8A8] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm bg-white shadow-[0px_1px_2px_0px_#0A0D120D]"
             />
           </div>
 
           <div>
-            <label className="block font-inter font-normal text-sm leading-none text-gray-700 mb-2">
+            <label className="block font-inter font-normal text-xs leading-none text-black mb-2">
               Backup Email
             </label>
             <input
               type="email"
               defaultValue="••••••••"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm"
+              className="w-full h-12 px-4 py-3 border border-[#A8A8A8] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm bg-white shadow-[0px_1px_2px_0px_#0A0D120D]"
             />
           </div>
         </div>
@@ -46,24 +46,24 @@ const ChangePassword = () => {
         {/* Right Column */}
         <div className="space-y-4">
           <div>
-            <label className="block font-inter font-normal text-sm leading-none text-gray-700 mb-2">
+            <label className="block font-inter font-normal text-xs leading-none text-black mb-2">
               Current Password
             </label>
             <input
               type="password"
               defaultValue="••••••••"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm"
+              className="w-full h-12 px-4 py-3 border border-[#A8A8A8] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm bg-white shadow-[0px_1px_2px_0px_#0A0D120D]"
             />
           </div>
 
           <div>
-            <label className="block font-inter font-normal text-sm leading-none text-gray-700 mb-2">
+            <label className="block font-inter font-normal text-xs leading-none text-black mb-2">
               Confirm Password
             </label>
             <input
               type="password"
               defaultValue="••••••••"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm"
+              className="w-full h-12 px-4 py-3 border border-[#A8A8A8] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-inter font-normal text-sm bg-white shadow-[0px_1px_2px_0px_#0A0D120D]"
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ const ChangePassword = () => {
 
       {/* Save Button */}
       <div className="flex justify-end pt-4">
-        <button className="bg-[#5B7C99] text-white px-6 py-2 rounded-lg font-inter font-normal text-sm hover:bg-[#4A6B8A] transition-colors">
+        <button className="w-[143px] h-[43px] px-8 py-3 bg-[#5B7C99] text-white rounded font-inter font-normal text-sm hover:bg-[#4A6B8A] transition-colors shadow-[0px_4px_4px_0px_#00000040]">
           Save
         </button>
       </div>

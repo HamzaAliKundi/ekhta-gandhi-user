@@ -26,7 +26,7 @@ const PaymentMethod = () => {
 
       {/* Save Button */}
       <div className="flex justify-end pt-4">
-        <button className="bg-[#5B7C99] text-white px-6 py-2 rounded-lg font-inter font-normal text-sm hover:bg-[#4A6B8A] transition-colors">
+        <button className="w-[143px] h-[43px] px-8 py-3 bg-[#5B7C99] text-white rounded font-inter font-normal text-sm hover:bg-[#4A6B8A] transition-colors shadow-[0px_4px_4px_0px_#00000040]">
           Save
         </button>
       </div>

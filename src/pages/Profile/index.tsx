@@ -33,30 +33,32 @@ const ProfilePage = () => {
   return (
     <div className="flex flex-col bg-[#ECF2F7]">
       <Navbar title="Profile" />
-      <div className="bg-gray-50 min-h-screen p-6">
+      <div className="bg-gray-50 min-h-screen">
         {/* Main Profile Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200">
+        <div className="bg-white rounded-xl shadow-lg">
           {/* Tabs */}
           <div className="border-b border-gray-200">
-            <div className="flex space-x-8 px-6">
-              {tabs.map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`py-4 px-1 border-b-2 font-inter font-normal text-sm leading-none tracking-[0%] transition-colors ${
-                    activeTab === tab.id
-                      ? 'border-blue-500 text-blue-600 font-medium'
-                      : 'border-transparent text-gray-600 hover:text-gray-800'
-                  }`}
-                >
-                  {tab.name}
-                </button>
-              ))}
+            <div className="flex overflow-x-auto scrollbar-hide px-4 sm:px-6">
+              <div className="flex space-x-4 sm:space-x-10 min-w-full">
+                {tabs.map((tab) => (
+                  <button
+                    key={tab.id}
+                    onClick={() => setActiveTab(tab.id)}
+                    className={`py-3 px-3 sm:px-6 border-b-2 font-inter font-normal text-sm sm:text-base leading-none tracking-[0%] transition-colors whitespace-nowrap flex-shrink-0 ${
+                      activeTab === tab.id
+                        ? 'border-[#5B7C99] text-black'
+                        : 'border-transparent text-gray-600 hover:text-gray-800'
+                    }`}
+                  >
+                    {tab.name}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Tab Content */}
-          <div className="p-6">
+          <div className="p-4 sm:p-6">
             {renderTabContent()}
           </div>
         </div>
